@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/mrbighokage/ClientWebSocketWrapper.DotNet</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/mrbighokage/ClientWebSocketWrapper.DotNet/blob/master/LICENSE</PackageLicenseUrl>
+    <Description>Event-based wrapper for the ClientWebSocket .NET Standart 2.0</Description>
+    <RepositoryUrl>https://github.com/mrbighokage/ClientWebSocketWrapper.DotNet</RepositoryUrl>
+    <PackageTags>WebSocket,.NET Standart 2.0,Event-based</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
