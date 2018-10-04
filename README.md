@@ -14,6 +14,9 @@ Install-Package ClientWebSocketWrapper -Version 1.0.0
 ```
 
 ## Usage example
+
+https://github.com/mrbighokage/ClientWebSocketWrapper.DotNet/blob/develop/src/ClientWebSocketWrapper.Tests/Program.cs
+
 ### Exchange GDAX
 
 ```csharp
