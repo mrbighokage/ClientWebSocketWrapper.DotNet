@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/mrbighokage/ClientWebSocketWrapper.DotNet</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/mrbighokage/ClientWebSocketWrapper.DotNet/blob/master/LICENSE</PackageLicenseUrl>
+    <Description>Event-based wrapper for the ClientWebSocket .NET Standart 2.0</Description>
+    <RepositoryUrl>https://github.com/mrbighokage/ClientWebSocketWrapper.DotNet</RepositoryUrl>
+    <PackageTags>WebSocket,.NET Standart 2.0,Event-based</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageIconUrl>http://danpatrascu.com/wp-content/uploads/2017/12/download.png</PackageIconUrl>
+    <Authors>mrbighokage</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>
