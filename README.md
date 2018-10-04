@@ -90,5 +90,7 @@ using (var socket = new WebSocketWrapper(uri))
         command = "unsubscribe",
         channel = 69
     });
+    
+    await Task.Delay(500);
 }
 ```
