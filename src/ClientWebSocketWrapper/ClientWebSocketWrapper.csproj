@@ -10,6 +10,8 @@
     <RepositoryUrl>https://github.com/mrbighokage/ClientWebSocketWrapper.DotNet</RepositoryUrl>
     <PackageTags>WebSocket,.NET Standart 2.0,Event-based</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
+    <PackageIconUrl>http://danpatrascu.com/wp-content/uploads/2017/12/download.png</PackageIconUrl>
+    <Authors>mrbighokage</Authors>
   </PropertyGroup>
 
   <ItemGroup>
