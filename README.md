@@ -13,11 +13,9 @@ https://www.nuget.org/packages/ClientWebSocketWrapper
 Install-Package ClientWebSocketWrapper -Version 1.0.0
 ```
 
-## Usage example
+## Usage example [Test project](https://github.com/mrbighokage/ClientWebSocketWrapper.DotNet/blob/develop/src/ClientWebSocketWrapper.Tests/Program.cs)
 
-https://github.com/mrbighokage/ClientWebSocketWrapper.DotNet/blob/develop/src/ClientWebSocketWrapper.Tests/Program.cs
-
-### Exchange GDAX
+### Test exchange GDAX
 
 ```csharp
 var uri = new Uri("wss://ws-feed.gdax.com");
@@ -49,48 +47,5 @@ using (var socket = new WebSocketWrapper(uri))
     });
 
     await Task.Delay(10000);
-}
-```
-
-### Exchange Poloniex
-
-```csharp
-var uri = new Uri("wss://api2.poloniex.com");
-
-using (var socket = new WebSocketWrapper(uri))
-{
-    socket.MessageArrived += (message) =>
-    {
-        Console.WriteLine(message);
-    };
-
-    socket.ConnectionClosed += () =>
-    {
-        Console.WriteLine("Connection Closed");
-    };
-
-    socket.ConnectionError += (exception) =>
-    {
-        Console.WriteLine(exception.Message);
-    };
-    
-    await socket.ConnectAsync();
-
-     // subscribe to chanell BTC_NXT
-    await socket.SendAsync(new
-    {
-        command = "subscribe",
-        channel = 69
-    });
-
-    await Task.Delay(10000);
-
-    await socket.SendAsync(new
-    {
-        command = "unsubscribe",
-        channel = 69
-    });
-    
-    await Task.Delay(500);
 }
 ```
