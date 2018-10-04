@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\ClientWebSocketWrapper\ClientWebSocketWrapper.csproj" />
+    <ProjectReference Include="..\ClientWebSocketWrapper\ClientWebSocketWrapper.csproj" />
   </ItemGroup>
 
   <ItemGroup>
