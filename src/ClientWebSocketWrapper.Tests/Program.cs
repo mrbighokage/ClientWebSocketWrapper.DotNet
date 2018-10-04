@@ -27,10 +27,9 @@ namespace Test
 
             using (var socket = new WebSocketWrapper(uri))
             {
-                await socket.ConnectAsync();
-
-                // check events
                 MessageArrived(socket);
+
+                await socket.ConnectAsync();
 
                 await socket.SendAsync(new
                 {
@@ -47,12 +46,11 @@ namespace Test
 
             using (var socket = new WebSocketWrapper(uri))
             {
-                await socket.ConnectAsync();
-
-                // check events
                 MessageArrived(socket);
 
-                 // subscribe to chanell BTC_NXT
+                await socket.ConnectAsync();
+
+                // subscribe to chanell BTC_NXT
                 await socket.SendAsync(new
                 {
                     command = "subscribe",
@@ -67,21 +65,7 @@ namespace Test
                     channel = 69
                 });
 
-                await Task.Delay(2000);
-
-                await socket.SendAsync(new
-                {
-                    command = "subscribe",
-                    channel = 7
-                });
-
-                await Task.Delay(10000);
-
-                await socket.SendAsync(new
-                {
-                    command = "unsubscribe",
-                    channel = 7
-                });
+                await Task.Delay(500);
             }
         }
 
